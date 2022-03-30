@@ -3,19 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>PokeDex</title>
+  <link rel="shortcut icon" href="./pokeball_ico.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./style.css" />
   <link rel="stylesheet" href="./types.css" />
 </head>
 <body>
-  <img class="pokemon-img" src="https://archives.bulbagarden.net/media/upload/c/c5/487Giratina-Altered.png" />
-  <div class="container">
+  <!-- <img src="https://archives.bulbagarden.net/media/upload/c/c5/487Giratina-Altered.png" /> -->
+
+    <h1>POKEDEX</h1>
+
+    <button class="open_pokedex" id="open_pokedex">OPEN POKEDEX</button>
+
+  <div id="container" class="container">
     <ul data-js="pokedex" class="pokedex"></ul>
   </div>
 
-  <div class="load">
       <button id="load_more">Load</button>
-  </div>
+
+  <button class="top_btn" id="top_btn" alt="top">
+    <!-- <p id="linha"></p> -->
+  </button>
   
   <script src="./app.js"></script>
+  <script src="./backToTop.js"></script>
 </body>
 </html>
