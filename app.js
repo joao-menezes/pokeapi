@@ -81,9 +81,7 @@ const fetchPokemon = () => {
     .then(pokemons => {
         const pokemonList = pokemons.reduce((acc, pokemon) => {
             const types = pokemon.types.map(typeinfo => typeinfo.type.name);
-            if (pokemon.name === 'cloyster') {
-                pokemon.name = 'Vagina';
-            }
+            
             acc += `<li class="poke_card ${types[0]} "/>
 
                     <p class="number">N°${pokemon.id}</p>
