@@ -87,10 +87,9 @@ const fetchPokemon = () => {
                     <p class="number">N°${pokemon.id}</p>
                     
                     <div class="card-description">
-                    <img class="pokemon-img" alt="${pokemon.name}" src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${pokemon.id}.svg" />
+                    <img class="pokemon-img" alt="${pokemon.name}" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" />
                     <h1 class="card-title">${pokemon.name}<h1>
                     </div>
-                    
                     <div class="infos" id="infos">
                         <p class="card-text">${pokemon.weight} weight</p>
                         <p class="card-text">${pokemon.height} height</p>
